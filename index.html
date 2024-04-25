@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Contactos</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+  <!-- Head -->
+  <h2>Lista de Contactos</h2>
+  <!-- Formulario -->
+  <form id="form">
+    <div class="form-input-container">
+      <label for="input-name">Nombre y Apellido.</label>
+      <input 
+        type="text" 
+        id="input-name" 
+        class="form-input"
+        name="input-name"
+        placeholder="Ejemplo: Giovanni Vasques"
+      >
+      <i class="formulario__validacion-estado fas fa-time-circle"></i>
+      <p class="info">
+        Ambos deben comenzar con mayusculas <br>
+      </p>
+    </div>
+    <div class="form-input-container">
+      <label for="input-number">Numero</label>
+      <input 
+        type="text" 
+        id="input-number"
+        class="form-input"
+        name="input-number" 
+        placeholder="04145487878"
+      >
+      <i class="formulario__validacion-estado fas fa-time-circle"></i>
+      <p class="info">
+        Un numero venezolanzo valido. <br>
+      </p>
+    <button id="form-btn" disabled>Crear Contacto</button>
+  </div>
+  </form>
+  <!-- Lista de Contactos -->
+  <div class="lista-contactos">
+   <ul id="list">
+    <li class="contact">
+      <button class="delete-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="delete-icon"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>       
+      </button>
+      <p>Giovanni</p>
+      <p>Vasques</p>
+      <p>04145487456</p>
+      <button class="edit-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="edit-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+        </svg>
+      </button>
+    </li>
+   </ul>
+  </div>
+</div>
+  <script src="dom.js"></script>
+  </body>
+</html>
